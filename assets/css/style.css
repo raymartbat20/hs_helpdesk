@@ -481,7 +481,10 @@ header .header-content {
   background: #f1f1f1;
   border-color: #f1f1f1;
   box-shadow: none;
-  padding: 10px 10px 10px 50px;
+  padding: 10px;
+}
+.lead-form-header .form-control.textarea{
+  min-height: 150px;
 }
 .lead-form-header .form-group i{
   position: absolute;
@@ -1712,6 +1715,14 @@ ul.social-touch li a.gitHub:hover{
   background: #7B1CA7;
 }
 
+
+/* Added */
+.customized-padding-left {
+  padding-left: 7.5px;
+}
+.customized-padding-right {
+  padding-right: 7.5px;
+}
 /**************************
         End Of CSS
 **************************/

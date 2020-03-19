@@ -126,7 +126,15 @@
   }
   .mrt15_992{
     margin-top: 15px;
-  } 
+  }
+  /* Added */
+  .customized-padding-left {
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+  .customized-padding-right {
+    padding-right: 15px;
+  }
 }
 
 
