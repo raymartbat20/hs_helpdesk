@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Mirrored from sakanjabin.com/livedemo/multi4/lead/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Mar 2020 07:58:54 GMT -->
+<head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="multi4 - Multipurpose Business Landing Page">
+    <meta name="keywords" content="multipurpose, company, agency, business, marketing, digital agency, corporate, accounts, financial, consulting, consultancy, website template, bootstrap template, landing page, multi4">
+    <meta name="author" content="sakanjabin.com">
+	<title>HS-Helpdesk</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<!-- Bootstrap CSS-->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <!-- Preloader CSS-->
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <!-- Style CSS-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- Font Awesome CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Themify Icons CSS-->
+	<link rel="stylesheet" type="text/css" href="assets/fonts/themify-icons/themify-icons.css">
+	<!-- Google Font CSS-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"> 
+	<!-- Plugin CSS -->
+	<link href="assets/js/magnific-popup/magnific-popup.css" rel="stylesheet">
+	<!-- Animation CSS -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Percircle CSS -->
+    <link rel="stylesheet" href="assets/css/percircle.css">
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+</head>
+<body id="page-top">
+
+    <!-- Preloader -->
+    <div id="preloader"> 
+        <div id="square">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div id="mask-cover"></div>
+    <!-- End Of Preloader -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="bg_overlay"></div>
+        <div class="header-content">
+            <div class="header-content-inner has-form">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 wow fadeInLeft mb-5" data-wow-duration="2s">
+                            <div class="lead-form-header">
+                                <h3>Ready to work with us</h3>
+                                <h4>Get your free quote</h4>
+                                <form class="msg-sending-form" action="http://sakanjabin.com/livedemo/multi4/lead/lead.php" method="post">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                                        <i class="fa fa-user-circle" ></i>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                                        <i class="fa fa-envelope" ></i>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="phone" placeholder="Your Phone" required>
+                                        <i class="fa fa-phone-square" ></i>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="zip_code" placeholder="Zip Code" required>
+                                        <i class="fa fa-location-arrow" ></i>
+                                    </div>
+                                    <button type="submit" class="btn btn-sm custom_btn btn-quote" >SEND REQUEST</button>
+                                 </form>
+                                 <p>Already have ticket?
+                                    <a data-toggle="modal" data-target="#assign-modal">Check Status Here</a>
+                                 </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 wow fadeInRight" data-wow-duration="2s">
+                           <div class="card-box">
+                              <div class="card-box" style="color:black; text-align:center; background:white; height:80px; border-radius:5px;">
+                                 <h1>Im working</h1>
+                              </div>
+                              <div class="card-box" style="color:black; text-align:center; background:white; height:80px; border-radius:5px;">
+                                 <h1>Im working</h1>
+                              </div>
+                              <div class="card-box" style="color:black; text-align:center; background:white; height:80px; border-radius:5px;">
+                                 <h1>Im working</h1>
+                              </div>
+                              <div class="card-box" style="color:black; text-align:center; background:white; height:80px; border-radius:5px;">
+                                 <h1>Im working</h1>
+                              </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <div id="assign-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title" id="myLargeModalLabel">Assign Ticket</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              </div>
+              <div class="modal-body">
+                  <div class="container-fluid">
+                      <form method="POST" action="{{route('system.new_ticket.update">
+                      @csrf
+                      @method('PATCH')
+                      <input type="hidden" name="ticket_id" id="ticket_id" />
+                      <div class="form-group row">
+                          <label for="programmer" class="col-form-label col-lg-4">Assign to:</label>
+                          <div class="col-lg-8">
+                              <select class="form-control" name="user_id" id="programmer">
+                                  <option disabled selected>--Select a Developer--</option> 
+                                      <option value="">sad</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label class="col-form-label col-lg-4" for="deadline">Deadline</label>
+                          <div class="col-lg-8">
+                              <input type="date" class="form-control" name="deadline" id="deadline" />
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="submit" class="btn btn-warning">SUBMIT</button>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">CLOSE</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+
+<!-- Common JavaScript -->
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="assets/js/scrollreveal/scrollreveal.min.js"></script>
+<script type="text/javascript" src="assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/percircle.js"></script>
+<script src="assets/js/creative.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script>new WOW().init();</script>
+
+<script type="text/javascript" src="assets/js/jquery.counterup.js"></script>
+<script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+
+
+
+
+<!-- Custom JavaScript -->
+<script src="assets/js/custom.js"></script> 
+
+
+
+</body>
+
+<!-- Mirrored from sakanjabin.com/livedemo/multi4/lead/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Mar 2020 07:59:50 GMT -->
+</html>
