@@ -1731,6 +1731,39 @@ ul.social-touch li a.gitHub:hover{
   margin-bottom: 15px;
   border-radius: 4px;
 }
+
+.div-cards h3{
+  padding-top: 30px;
+}
+
+
+#card-1{
+  background-image: url('../images/web-development-banner.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#card-2{
+  background-image: url('../images/mobile-development-banner.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#card-3{
+  background-image: url('../images/logo-designing-banner.jpeg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#card-4{
+  background-image: url('../images/achievement_bg.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
 /**************************
         End Of CSS
 **************************/
