@@ -358,7 +358,7 @@ header .header-content {
   position: relative;
   text-align: left;
   overflow: auto;
-  padding: 150px 15px 0;
+  padding: 150px 15px;
   width: 100%;
 }
 /* .header-content-inner {
