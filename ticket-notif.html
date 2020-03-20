@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="multi4 - Multipurpose Business Landing Page">
+    <meta name="keywords" content="multipurpose, company, agency, business, marketing, digital agency, corporate, accounts, financial, consulting, consultancy, website template, bootstrap template, landing page, multi4">
+    <meta name="author" content="sakanjabin.com">
+	<title>HS-Helpdesk</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<!-- Bootstrap CSS-->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <!-- Preloader CSS-->
+    <link rel="stylesheet" href="assets/css/preloader.css">
+	<!-- Font Awesome CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Themify Icons CSS-->
+	<link rel="stylesheet" type="text/css" href="assets/fonts/themify-icons/themify-icons.css">
+	<!-- Google Font CSS-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"> 
+	<!-- Plugin CSS -->
+	<link href="assets/js/magnific-popup/magnific-popup.css" rel="stylesheet">
+	<!-- Animation CSS -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Percircle CSS -->
+    <link rel="stylesheet" href="assets/css/percircle.css">
+    <!-- Style CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- Responsive CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+</head>
+<body id="page-top">
+
+    <!-- Preloader -->
+    <div id="preloader"> 
+        <div id="square">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div id="mask-cover"></div>
+    <!-- End Of Preloader -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="bg_overlay"></div>
+        <div class="header-content">
+          <div class="container text-center">
+              <div class="message-container">
+                <h3>Hi Raymart Palermo!</h3>
+                <p class="text-center">We would like to inform you that your ticket
+                  with the reference ID of <span class="text-primary text-bold">Ae6AS4d8</span> is still waiting for an available
+                  developer to be fixed.
+                </p>
+                <p class="text-center">
+                  Your Ticket with the reference ID of 
+                  <span class="text-primary font-weight-bold">Ae6AS4d8</span> 
+                  with a project name of 
+                  <span class="text-primary font-weight-bold">LARAVEL</span> and
+                  a <span class="text-danger font-weight-bold">Level 3</span> assistance need 
+                  is already in working status. 
+                </p>
+                <p>The expected fixed date is at 
+                  <span class="text-primary font-weight-bold">03/20/2020</span>.
+                  It was assigned to our developer 
+                  <span class="text-primary font-weight-bold">Laravel Developer</span>. 
+                </p>
+                <h4 class="">Thank you for your patience</h4>
+              </div>
+          </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <div id="assign-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title" id="myLargeModalLabel">Assign Ticket</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              </div>
+              <div class="modal-body">
+                  <div class="container-fluid">
+                      <form method="POST" action="{{route('system.new_ticket.update">
+                      @csrf
+                      @method('PATCH')
+                      <input type="hidden" name="ticket_id" id="ticket_id" />
+                      <div class="form-group row">
+                          <label for="programmer" class="col-form-label col-lg-4">Assign to:</label>
+                          <div class="col-lg-8">
+                              <select class="form-control" name="user_id" id="programmer">
+                                  <option disabled selected>--Select a Developer--</option> 
+                                      <option value="">sad</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label class="col-form-label col-lg-4" for="deadline">Deadline</label>
+                          <div class="col-lg-8">
+                              <input type="date" class="form-control" name="deadline" id="deadline" />
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="submit" class="btn btn-warning">SUBMIT</button>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">CLOSE</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <!-- Common JavaScript -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="assets/js/scrollreveal/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/percircle.js"></script>
+    <script src="assets/js/creative.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+
+    <script type="text/javascript" src="assets/js/jquery.counterup.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+
+
+
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/custom.js"></script> 
+    </body>
+</html>

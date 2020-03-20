@@ -331,9 +331,9 @@ header {
   background-position: center center;
   text-align: center;
   color: #fff;
-  height: 100%;
+  /* height: 100%; */
   display: block;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   position: relative;
 }
 .bg_overlay{
@@ -1735,8 +1735,6 @@ ul.social-touch li a.gitHub:hover{
 .div-cards h3{
   padding-top: 30px;
 }
-
-
 #card-1{
   background-image: url('../images/web-development-banner.jpg');
   background-position: center;
@@ -1763,6 +1761,36 @@ ul.social-touch li a.gitHub:hover{
   background-position: center;
   background-size: cover;
   position: relative;
+}
+.message-container {
+  background-color:#fff;
+  min-height: 300px;
+  border-radius: 4px;
+  padding: 30px 30px;
+  color: #983C80;
+  min-width: 400px;
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.message-container h3,
+.message-container h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.message-container h3 {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+.message-container h4  {
+  margin-top: 30px;
+}
+.message-container p {
+  color: #222222;
+}
+.message-container span {
+  color: #983C80;
+  font-weight: bold;
 }
 /**************************
         End Of CSS
